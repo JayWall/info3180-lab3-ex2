@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" 
+        href="contact.css">
+    </head>
+    <body>
+        <h1>Contact Form</h1>
+        
+        <div>Fill in this form to contact the site owners</div><br>
+        
+        <form method="POST" action="{{ url_for('send_email')}}">
+            <p class="medium"><b>Name <span>(Required)</span></b></p>
+            <p class="small">Please enter your full name</p>
+            <input type="text" name="Name" class="input"><br><br>
+            
+            <p class="medium"><b>Email <span>(Required)</span></b></p>
+            <p class="small">Please enter your email address</p>
+            <input type="text" name="Email" class="input"><br><br>
+            
+            <p class="medium"><b>Subject <span>(Required)</span></b></p>
+            <p class="small">Please enter the subject for your message</p>
+            <input type="text" name="Subject" class="input"><br><br>
+            
+            <p class="medium"><b>Message <span>(Required)</span></b></p>
+            <p class="small">Please enter the message you would like to send</p>
+            <input type="text" name="Message" class="box input"><br><br>
+            
+            <button>Send</button>
+            
+        </form>
+    </body>
+    
+</html>
